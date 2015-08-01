@@ -17,7 +17,7 @@ class CreateRemisionesTable extends Migration {
 			$table->increments('Id_Remision');
 			$table->char('Tipo_Remison');
 			$table->date('Fecha_Remision');
-			$table->string('Descripcion_Remision');
+			$table->string('Descripcion_Remision')
 			$table->timestamps();
 		});
 	}

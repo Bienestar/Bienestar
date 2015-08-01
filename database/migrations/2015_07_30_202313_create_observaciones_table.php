@@ -14,7 +14,10 @@ class CreateObservacionesTable extends Migration {
 	{
 		Schema::create('observaciones', function(Blueprint $table)
 		{
-			$table->increments('id');
+			$table->increments('Id_Obs');
+			$table->date('Fecha_Obs');
+			$table->string('Descripcion_Obs');
+			$table->integer('NSesiones_Obs');
 			$table->timestamps();
 		});
 	}
