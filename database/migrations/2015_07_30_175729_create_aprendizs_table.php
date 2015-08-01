@@ -28,7 +28,6 @@ class CreateAprendizsTable extends Migration {
 			$table->String('Eps');
 
 
-			$table->timestamps();
 		});
 	}
 
