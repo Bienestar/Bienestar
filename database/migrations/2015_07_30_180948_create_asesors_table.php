@@ -21,7 +21,7 @@ class CreateAsesorsTable extends Migration {
 			$table->String('Direccion_Asesor');
 			$table->bigInteger('Telefono_Asesor');
 			$table->char('Genero_Asesor');
-			$table->String('Email_Asesor');
+			$table->String('Email_Asesor')-> unique();
 			$table->String('Contraseña_Asesor');
 			$table->char('cargo_Asesor');
 			
